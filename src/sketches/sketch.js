@@ -5,13 +5,22 @@ export default function sketch(p){
     let bordo;
     let navy;
     let lightColor;
+    let minSizeX;
+    let minSizeY;
+    let X;
+    let Y;
     p.preload = () => {
         helix = p.loadModel(helixModel);
     }
 
     p.setup = () => {
-      p.createCanvas(600, 600, p.WEBGL);
-      p.background(200);
+      minSizeX = 170.0;
+      minSizeY= 271.0;
+      X = Math.max(minSizeX,p.windowWidth/2);
+      Y = Math.max(minSizeY,p.windowHeight/2);
+      p.createCanvas(X,Y, p.WEBGL);
+      console.log(p.width,p.height);
+      //p.background(200);
       counter = 0;
       navy = p.color(10,10,50);
       bordo = p.color(50,10,20);
@@ -27,7 +36,6 @@ export default function sketch(p){
           p.stroke(navy);
       }
       //more serious
-      //p.scale(2);
       p.translate(10, -50);
       p.rotateY(p.frameCount * 0.01);
       p.fill(200);
@@ -51,6 +59,13 @@ export default function sketch(p){
     }
 
     p.mouseClicked = () => {
-      p.background(200);
+      p.background(255);
+    }
+
+    p.windowResized = () => {
+      X = Math.max(minSizeX,p.windowWidth/2);
+      Y = Math.max(minSizeY,p.windowHeight/2);
+        p.resizeCanvas(X,Y);
+        console.log(p.width,p.height);
     }
 }
