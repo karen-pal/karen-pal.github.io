@@ -1,10 +1,13 @@
 {
-  "main.css": "static/css/main.5b58eb84.css",
-  "main.css.map": "static/css/main.5b58eb84.css.map",
-  "main.js": "static/js/main.1288ad60.js",
-  "main.js.map": "static/js/main.1288ad60.js.map",
-  "static/js/0.0d5dd440.chunk.js": "static/js/0.0d5dd440.chunk.js",
-  "static/js/0.0d5dd440.chunk.js.map": "static/js/0.0d5dd440.chunk.js.map",
+  "main.css": "static/css/main.31275ebc.css",
+  "main.css.map": "static/css/main.31275ebc.css.map",
+  "main.js": "static/js/main.966dafe9.js",
+  "main.js.map": "static/js/main.966dafe9.js.map",
+  "static/js/0.0d657ca3.chunk.js": "static/js/0.0d657ca3.chunk.js",
+  "static/js/0.0d657ca3.chunk.js.map": "static/js/0.0d657ca3.chunk.js.map",
+  "static/media/background-min.png": "static/media/background-min.fd6073be.png",
+  "static/media/foreground-min.png": "static/media/foreground-min.c8827012.png",
+  "static/media/foreground_invert-min.png": "static/media/foreground_invert-min.b5ee794f.png",
   "static/media/grotesk.otf": "static/media/grotesk.b1239e53.otf",
   "static/media/simple_dna_2.obj": "static/media/simple_dna_2.f7af0650.obj"
 }
