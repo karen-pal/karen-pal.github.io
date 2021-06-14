@@ -38,7 +38,7 @@ export default function sketch(p){
       //more serious
       p.translate(10, -50);
       p.rotateY(p.frameCount * 0.01);
-      p.fill(200);
+      p.fill(255);
 
       //p.normalMaterial();
       p.model(helix);
@@ -49,7 +49,7 @@ export default function sketch(p){
       } else{
           p.stroke(bordo);
       }
-      p.fill(200);
+      p.fill(255);
       //p.translate(p.mouseX,p.mouseY);
       // beautiful useless code
       p.rotateY(p.frameCount * 0.01);

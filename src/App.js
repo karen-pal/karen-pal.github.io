@@ -1,25 +1,35 @@
-import React, { Component } from 'react';
-import P5Wrapper from 'react-p5-wrapper';
-import sketch from './sketches/sketch.js';
-import logo from './sketches/logo.js';
+import React, {  Suspense } from 'react';
 import './App.css';
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route,
+  Link
+} from "react-router-dom";
+import Home from './components/Home.js';
+import Projects from './components/Projects.js';
+import Resume from './components/Resume.js';
+import Blog from './components/Blog.js';
 
-class App extends Component {
-  constructor(){
-    super();
-  }
-  render() {
+function App() {
     return (
       <div>
-        <div className='sketch'>
-        <P5Wrapper sketch={sketch} ></P5Wrapper>
-        </div>
-        <div className='logo'>
-            <P5Wrapper sketch={logo} ></P5Wrapper>
-        </div>
+        <Router>
+            <div className='navbar'>
+                <Link to="/"> <button> Home </button> </Link>
+                <Link to="/projects"> <button> Projects </button> </Link>
+                <Link to="/resume"><button>Resume</button></Link>
+                <Link to="/blog"><button>Blog</button></Link>
+            </div>
+            <Switch>
+              <Route exact path="/" ><Home/></Route>
+              <Route exact path="/projects"><Projects/></Route>
+              <Route exact path="/resume"> <Resume/></Route>
+              <Route exact path="/blog"><Blog/></Route>
+            </Switch>
+        </Router>
       </div>
     );
   }
-}
 
 export default App;

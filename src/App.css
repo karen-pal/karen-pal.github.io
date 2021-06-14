@@ -1,3 +1,10 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Akronim&family=Roboto+Mono:wght@300&family=Viaoda+Libre&display=swap');
+body {
+ background-color:#ddd7e0;
+ z-index:-1000000;
+}
+
 .App {
   text-align: center;
 }
@@ -18,14 +25,76 @@
 }
 
 .sketch {
-    position: fixed;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-}
-
-.logo {
     position:absolute;
-    bottom:0;
+    top:20%;
     left:0;
 }
+.helix-line {
+    position:absolute;
+    left:0;
+    bottom:0;
+    z-index:0;
+}
+.dibujo {
+    position:absolute;
+    left:5%;
+    z-index:3;
+    height: 100%;
+    width: auto;
+    -webkit-filter: drop-shadow(0 0 7.5rem #b2d3ba);
+    filter: drop-shadow(0 0 7.5rem #b2d3ba);
+}
+.dibujo:hover{
+    -webkit-filter: invert(1);
+    filter:invert(1) drop-shadow(0 0 7.5rem rgb(82,31,124));
+}
+.crop {
+    overflow:hidden;
+    positions:relative;
+}
+.crop img {
+    object-fit: cover;
+    position:absolute;
+    z-index:1;
+    width:100%;
+    left:-22%;
+    top:-31%;
+    overflow: hidden;
+}
+hr{
+    position:absolute;
+}
+.navbar{
+    z-index:10;
+    position:absolute;
+    right:10%;
+    top:10%;
+    color:#375a8d;
+}
+button{
+background-color: #CBC9F9;
+  color: #132848;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 20px;
+}
+button:hover {
+	text-shadow: 0px 0px 6px rgba(255, 255, 255, 1);
+	-webkit-box-shadow: 0px 5px 40px -10px rgba(82,31,124,1);
+	-moz-box-shadow: 0px 5px 40px -10px rgba(82,31,124,1);
+	transition: all 0.4s ease 0s;
+}
+.name {
+    /*font-family: 'Akronim', cursive;*/
+    font-family: 'roboto mono', monospace;
+    z-index:10;
+    font-size: 100px;
+    position:absolute;
+    right:10%;
+    top:20%;
+    color:#0b274f;
+    text-shadow: 0 0 7px #CBC9F9;
+}
+
