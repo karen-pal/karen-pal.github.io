@@ -12,7 +12,7 @@ class App extends Component {
     return (
       <div>
         <div className='sketch'>
-        <P5Wrapper sketch={sketch} ></P5Wrapper>
+            <P5Wrapper sketch={sketch} ></P5Wrapper>
         </div>
         <div className='logo'>
             <P5Wrapper sketch={logo} ></P5Wrapper>
