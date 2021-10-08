@@ -61,9 +61,6 @@ body {
     top:-31%;
     overflow: hidden;
 }
-hr{
-    position:absolute;
-}
 .navbar{
     z-index:10;
     position:absolute;

@@ -1,4 +1,4 @@
-import React, {  Suspense } from 'react';
+import React from 'react';
 import './App.css';
 import {
   BrowserRouter as Router,
@@ -16,15 +16,15 @@ function App() {
       <div>
         <Router>
             <div className='navbar'>
-                <Link to="/"> <button> Home </button> </Link>
-                <Link to="/projects"> <button> Projects </button> </Link>
+                <Link to="/portfolio"> <button>Home</button></Link>
+                <Link to="/projects"><button>Projects</button></Link>
                 <Link to="/resume"><button>Resume</button></Link>
                 <Link to="/blog"><button>Blog</button></Link>
             </div>
             <Switch>
-              <Route exact path="/" ><Home/></Route>
+              <Route exact path="/portfolio" ><Home/></Route>
               <Route exact path="/projects"><Projects/></Route>
-              <Route exact path="/resume"> <Resume/></Route>
+              <Route exact path="/resume"><Resume/></Route>
               <Route exact path="/blog"><Blog/></Route>
             </Switch>
         </Router>

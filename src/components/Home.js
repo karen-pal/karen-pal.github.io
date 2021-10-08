@@ -23,7 +23,6 @@ function Home() {
                         <img className='dibujo-back' src={backImg} alt="abstract flower petals"/>
                     </div>
                 </Suspense>
-                <hr/>
                 <TextWithScroll/>
             </div>
         )
