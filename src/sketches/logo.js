@@ -31,6 +31,7 @@ export default function sketch(p){
     }
 
     p.draw = () => {
+      p.background(255,100);
       p.orbitControl();
       hiArray = grotesk.textToPoints("Karen",
           -p.width/2+70,

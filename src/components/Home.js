@@ -5,7 +5,6 @@ import sketch from '../sketches/helix_line.js';
 import foreImg from '../sketches/assets/fondos/foreground-min.png';
 import backImg from '../sketches/assets/fondos/background-min.png';
 import '../App.css';
-import TextWithScroll from './TextWithScroll.js';
 
 import {withRouter} from 'react-router';
 function Home() {
@@ -23,7 +22,6 @@ function Home() {
                         <img className='dibujo-back' src={backImg} alt="abstract flower petals"/>
                     </div>
                 </Suspense>
-                <TextWithScroll/>
             </div>
         )
 }

@@ -7,25 +7,21 @@ import {
   Link
 } from "react-router-dom";
 import Home from './components/Home.js';
-import Projects from './components/Projects.js';
-import Resume from './components/Resume.js';
-import Blog from './components/Blog.js';
+import Birth from './components/Birth.js';
 
 function App() {
     return (
       <div>
         <Router>
+            <div className ='home'>
+                <Home/>
+            </div>
             <div className='navbar'>
-                <Link to="/portfolio"> <button>Home</button></Link>
-                <Link to="/projects"><button>Projects</button></Link>
-                <Link to="/resume"><button>Resume</button></Link>
-                <Link to="/blog"><button>Blog</button></Link>
+                <Link to="/birth"> <button> ø</button></Link>
             </div>
             <Switch>
-              <Route exact path="/portfolio" ><Home/></Route>
-              <Route exact path="/projects"><Projects/></Route>
-              <Route exact path="/resume"><Resume/></Route>
-              <Route exact path="/blog"><Blog/></Route>
+              <Route exact path="/" ><Home/></Route>
+              <Route exact path="/birth"><Birth/></Route>
             </Switch>
         </Router>
       </div>
