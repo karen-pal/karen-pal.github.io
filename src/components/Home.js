@@ -1,5 +1,6 @@
 
 import React, {  Suspense } from 'react';
+import {Link} from "react-router-dom";
 import P5Wrapper from 'react-p5-wrapper';
 import sketch from '../sketches/helix_line.js';
 import foreImg from '../sketches/assets/fondos/foreground-min.png';
@@ -22,6 +23,9 @@ function Home() {
                         <img className='dibujo-back' src={backImg} alt="abstract flower petals"/>
                     </div>
                 </Suspense>
+            <div className='navbar'>
+                <Link to="/birth"> <button> ø</button></Link>
+            </div>
             </div>
         )
 }

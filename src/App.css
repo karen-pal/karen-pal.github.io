@@ -41,10 +41,10 @@ body {
   display: inline-block;
   padding: 105px 0px;
 }
-
-.birth:hover{
-    -webkit-filter: invert(1);
+.void{
+  background-color:black !important;
 }
+
 .dibujo {
     position:absolute;
     left:5%;
@@ -62,6 +62,12 @@ body {
     overflow:hidden;
     positions:relative;
 }
+.unificacion {
+    z-index:0;
+    position:absolute;
+    left:10%;
+    bottom:40%;
+}
 .crop img {
     object-fit: cover;
     position:absolute;
@@ -76,6 +82,13 @@ body {
     position:absolute;
     right:10%;
     top:10%;
+    color:#375a8d;
+}
+.go-root{
+    z-index:10;
+    position:absolute;
+    left:5%;
+    bottom:15%;
     color:#375a8d;
 }
 button{

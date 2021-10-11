@@ -13,11 +13,7 @@ function App() {
     return (
       <div>
         <Router>
-            <div className ='home'>
-                <Home/>
-            </div>
-            <div className='navbar'>
-                <Link to="/birth"> <button> ø</button></Link>
+            <div>
             </div>
             <Switch>
               <Route exact path="/" ><Home/></Route>

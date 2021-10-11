@@ -22,15 +22,15 @@ export default function sketch(p){
       let offX = p.map(p.noise(off),0,1,0.9,1.1);
       let offY =p.map(p.noise(off),0,1,1.9,2.1);
       buzz = Math.sin(p.frameCount)*2;
-      p.drawGradient(dim*offX, buzz + p.windowHeight / 2, gradColor+100, off*1.3);
+      p.drawGradient(dim*offX-p.mouseX, buzz + p.windowHeight / 2, gradColor+200, off*1.3);
       
-      p.drawGradient(dim*.95*offX, buzz+ p.windowHeight / offY, gradColor, off);
+      p.drawGradient(dim*.95*offX, buzz+ p.windowHeight / offY, gradColor-50, off);
 
     }
 
     p.drawGradient = (x, y, gradColor, off) => {
       //clear();
-      let radius = dim / 1.5;
+      let radius = dim *2;
       let h = gradColor;
       for (let r = radius; r > 0; --r) {
 
