@@ -11,7 +11,7 @@ function Birth() {
                 <P5Wrapper sketch={sketch} ></P5Wrapper>
             </div>
             <div className='go-root'>
-                <Link to="/"> <button>⇜</button></Link>
+                <Link to="/birth"> <button>⇜</button></Link>
             </div>
             <img className='unificacion' src={unificacion} alt="diagram showcasing unification process"/>
         </div>

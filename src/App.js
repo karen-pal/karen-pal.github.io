@@ -16,8 +16,9 @@ function App() {
             <div>
             </div>
             <Switch>
-              <Route exact path="/" ><Home/></Route>
-              <Route exact path="/birth"><Birth/></Route>
+              <Route exact path="/" ><Birth/></Route>
+              <Route exact path="/portfolio" ><Birth/></Route>
+              <Route exact path="/birth"><Home/></Route>
             </Switch>
         </Router>
       </div>
