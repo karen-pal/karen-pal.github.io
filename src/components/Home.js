@@ -24,7 +24,7 @@ function Home() {
                     </div>
                 </Suspense>
             <div className='navbar'>
-                <Link to="/"> <button> ø</button></Link>
+                <Link to="/portfolio"> <button>ø</button></Link>
             </div>
             </div>
         )

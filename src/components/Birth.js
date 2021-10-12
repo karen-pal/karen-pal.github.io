@@ -4,12 +4,11 @@ import sketch from '../sketches/circles.js';
 import {withRouter} from 'react-router';
 import {Link} from "react-router-dom";
 import unificacion from '../sketches/assets/fondos/unificacion.png';
+import CircleGradient from './CircleGradient.js';
 function Birth() {
     return(
         <div>
-            <div className='birth'>
-                <P5Wrapper sketch={sketch} ></P5Wrapper>
-            </div>
+            <CircleGradient/>
             <div className='go-root'>
                 <Link to="/birth"> <button>⇜</button></Link>
             </div>

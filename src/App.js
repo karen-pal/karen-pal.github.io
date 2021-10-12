@@ -4,7 +4,6 @@ import {
   BrowserRouter as Router,
   Switch,
   Route,
-  Link
 } from "react-router-dom";
 import Home from './components/Home.js';
 import Birth from './components/Birth.js';
@@ -21,6 +20,7 @@ function App() {
               <Route exact path="/birth"><Home/></Route>
             </Switch>
         </Router>
+        <p className='signature'>karen</p>
       </div>
     );
   }
